@@ -1,0 +1,157 @@
+@import "colours";
+@media screen and (max-width: 820px) {
+  .home2 {
+    height: 40vh;
+    img {
+      width: 30%;
+      height: 55%;
+    }
+  }
+  .home3 {
+    // height: 80vh;
+    > div {
+      height: 80vh;
+      > h1 {
+        font-size: 1.2rem;
+        font: italic 2rem;
+      }
+      > p {
+        font-size: 1.2rem;
+        font: italic 2rem;
+      }
+    }
+  }
+  .home4 {
+    height: 60vh;
+    > div {
+      height: 50vh;
+    }
+  }
+  .contact {
+    padding: 0.5rem;
+    > main {
+      height: 50vh;
+      width: 100%;
+      > h1 {
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $second;
+      }
+      form {
+        margin: 2rem;
+        > div > label {
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    > h1 {
+      display: none;
+    }
+    > main {
+      width: 100%;
+      justify-content: left;
+      a {
+        margin: 0.5rem;
+      }
+    }
+  }
+  .home {
+    align-items: center;
+    > main {
+      h1 {
+        font-size: 400 3rem;
+      }
+    }
+  }
+  .home2 {
+    flex-direction: column;
+    > img {
+      margin-top: 1.5rem;
+      width: 40%;
+      height: 40%;
+    }
+    > div {
+      padding: 0.5rem;
+      > p {
+        text-align: justify;
+        font-size: 1rem;
+      }
+    }
+  }
+  .home3 {
+    padding: 0%;
+    > div {
+      padding: 1;
+      text-align: center;
+      width: 100%;
+      border-radius: 0;
+      > p {
+        padding: 3rem 2rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  .home4 {
+    padding: 0%;
+    align-items: center;
+    > div {
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+      //   height: unset;
+      > article {
+        > div {
+          height: 8rem;
+          width: 8rem;
+          svg {
+            font-size: 3rem;
+          }
+          p {
+            font: 700 1.2rem $text2;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    > main {
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+      border-radius: 0.5rem;
+      width: 100%;
+      > h1 {
+        margin: 0rem;
+        margin-bottom: 1rem;
+      }
+      > form {
+        margin: 0%;
+        > div {
+          width: 100%;
+          > label {
+            padding-right: 2.5rem;
+            font-size: 1rem;
+          }
+        }
+        > button {
+          font-size: large;
+          width: 40%;
+        }
+      }
+    }
+  }
+  footer {
+    height: 35vh;
+    padding: 5rem;
+    grid-template-columns: 1fr;
+    > div {
+      align-items: center;
+    }
+  }
+}

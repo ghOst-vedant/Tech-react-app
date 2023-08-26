@@ -1,0 +1,31 @@
+@import "colours";
+
+footer{
+    background-color: $first;
+    padding: 2rem;
+    height: 30%;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    >div{
+        display: flex;
+        flex-direction: column;
+        >h3{
+            font: 900 1rem $text1;
+
+            text-transform: uppercase;
+            padding-bottom:0.5rem ;
+            margin-bottom: 0.5rem;
+            border-bottom: 0.01rem solid $third ;
+        }
+        >a{
+            font: 900 1rem $text1;
+            text-decoration: none;
+            color: $second;
+            &:hover{
+                padding: 0.5rem;
+                color: $third;
+
+            }
+        }
+    }
+}
